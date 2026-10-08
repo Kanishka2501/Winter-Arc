@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --theme-accent: #38bdf8;
+    --theme-secondary: #0284c7;
+    --theme-bg-root: #05070D;
+    --theme-card-bg: #080d19;
+    --theme-border: rgba(56, 189, 248, 0.22);
+  }
+
+  [data-theme="glacial"] {
+    --theme-accent: #38bdf8;
+    --theme-secondary: #0284c7;
+    --theme-bg-root: #05070D;
+    --theme-card-bg: #080d19;
+    --theme-border: rgba(56, 189, 248, 0.22);
+  }
+
+  [data-theme="aurora"] {
+    --theme-accent: #10b981;
+    --theme-secondary: #06b6d4;
+    --theme-bg-root: #040907;
+    --theme-card-bg: #07130f;
+    --theme-border: rgba(16, 185, 129, 0.22);
+  }
+
+  [data-theme="stealth"] {
+    --theme-accent: #e2e8f0;
+    --theme-secondary: #94a3b8;
+    --theme-bg-root: #020203;
+    --theme-card-bg: #0a0a0c;
+    --theme-border: rgba(226, 232, 240, 0.18);
+  }
+
+  [data-theme="blood_frost"] {
+    --theme-accent: #f43f5e;
+    --theme-secondary: #be123c;
+    --theme-bg-root: #080305;
+    --theme-card-bg: #13070b;
+    --theme-border: rgba(244, 63, 94, 0.22);
+  }
+
+  [data-theme="cyber"] {
+    --theme-accent: #818cf8;
+    --theme-secondary: #6366f1;
+    --theme-bg-root: #050614;
+    --theme-card-bg: #0a0c20;
+    --theme-border: rgba(129, 140, 248, 0.25);
+  }
+
+  [data-theme="solaris"] {
+    --theme-accent: #f59e0b;
+    --theme-secondary: #d97706;
+    --theme-bg-root: #070603;
+    --theme-card-bg: #130f06;
+    --theme-border: rgba(245, 158, 11, 0.22);
+  }
+
+  body {
+    background-color: var(--theme-bg-root, #05070D);
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease;
+  }
+
+  /* Custom subtle frosty scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #060913;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #17243c;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-accent, #0284c7);
+  }
+}

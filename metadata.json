@@ -1,0 +1,8 @@
+{
+  "name": "Winter Arc ❄️",
+  "description": "Disappear. Discipline. Transform. A private digital command center for personal transformation, habit tracking, focus sessions, workouts, and disciplined execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
